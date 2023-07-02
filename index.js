@@ -1,7 +1,7 @@
 const inventory = newInventory()
 move(inventory).to(0, 0)
 
-const character = newImage('assets/green-character/static.gif')
+// const character = newImage('assets/green-character/static.gif')
 move(character).to(100, 250)
 
 
@@ -13,3 +13,19 @@ move(newImage('assets/well.png')).to(500, 575)
 move(newItem('assets/sword.png')).to(500, 555)
 move(newItem('assets/shield.png')).to(165, 335)
 move(newItem('assets/staff.png')).to(600, 250)
+
+// moving character function
+const character = newImage('assets/green-character/static.gif')
+let direction = null;
+let x = 100;
+let y = 250;
+move(character).to(100, 250)
+
+// directional assignments
+
+if(direction === 'west'){
+    x = x - 1
+}
+
+
+
